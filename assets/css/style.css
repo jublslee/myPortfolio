@@ -13,7 +13,8 @@
     --color-brand3: #efff63;
     --color-brand4: #af8eb6;
     --sidbar-width: 240px;
-    --font-base: "Bacasime Antique";
+    --font-base: "Poppins";
+    /* --font-base: "Bacasime Antique"; */
 }
 
 body {
