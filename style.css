@@ -10,10 +10,16 @@
 }
 
 :root {
-    --heading-color1: #00ffee; 
-    --text-color1: white;
+    /* --heading-color1: #00ffee;  */
+    /* --text-color1: white;
     --bg-color1: #080808;
-    --bg-color2: #131313;
+    --bg-color2: #131313; */
+    --heading-color1: #fffedf;
+    --text-color1: black;
+    --text-color2: white;
+    --bg-color1: #acacac;
+    --bg-color2: #505050;
+    --bg-color3: #727272;
     /* --color-body: #b6cbce;
     --color-base2: #929292; */
     /* --color-base2: #757979; */
@@ -39,7 +45,8 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 4rem 12% 4rem;
+    padding: 1.8rem 5% 1.8rem;
+    /* padding: 4rem 12% 4rem; */
     background: rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: space-between;
@@ -64,10 +71,10 @@ body{
 }
 
 .navbar a{
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     color: var(--text-color1);
     margin-left: 4rem;
-    font-weight: 500;
+    font-weight: 600;
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
 }
@@ -229,15 +236,15 @@ span{
 @keyframes words{
     0%,
     20%{
-        content: "frond";
+        content: "front";
     }
     21%,
     40%{
-        content: "tsudent";
+        content: "student";
     }
     41%,
     60%{
-        content: "";
+        content: "tamburins";
     }
     61%,
     80%{
@@ -256,8 +263,8 @@ span{
     margin: 5rem 0;
 }
 .about{
-    color: black;
-    background: var(--bg-color1);
+    /* color: black;
+    background: var(--bg-color1); */
 }
 .about h2{
     margin-bottom: 5rem;
@@ -346,20 +353,27 @@ span{
     width: 50px;
 }
 
-/* bio */
-.bio{
+/* projects */
+/* .projects{
     background: var(--bg-color1);
     color: black;
+} */
+.projects h2{
+    margin-bottom: 4rem;
+    color: white;
 }
-.bio h2{
+.projects h3{
     margin-bottom: 5rem;
     color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
 }
 .services-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
-    gap: 2.5rem;
+    gap: 3rem;
 }
 .service-box{
     background-color: var(--heading-color1);
@@ -370,17 +384,23 @@ span{
     transition: 0.4s ease-in-out;
 }
 .service-box:hover{
-    background: white;
-    color: black;
+    /* background: white;
+    color: black; */
+    background: rgb(99, 99, 99);
+    color: rgb(255, 255, 255);
     border: 5px solid var(--heading-color1);
-    transform: scale(1.03);
+    /* transform: scale(1.03); */
+    transform: scale(1.03)translateY(-5px);
+    box-shadow: 0 0 25px var(--heading-color1);
 }
 .service-box .service-info{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
+    /* display: flex;
+    flex-direction: column; */
+    text-align: center;
+    /* text-align: left; */
+    /* justify-content: left; */
     max-height: 200px;
-    justify-content: left;
+    justify-content: center;
     align-items: baseline;
     padding: 5rem 5rem;
 }
@@ -398,7 +418,7 @@ span{
 }
 /* research */
 .research{
-    background: var(--bg-color2);
+    /* background: var(--bg-color2); */
 }
 .research-box{
     background-size: cover;
@@ -456,7 +476,7 @@ span{
 }
 /* contact */
 .contact{
-    background-color: var(--bg-color1);
+    /* background-color: var(--bg-color1); */
 }
 .contact h2{
     margin-bottom: 3rem;
@@ -480,9 +500,11 @@ span{
     width: 100%;
     padding: 2.5rem;
     font-size: 1.8rem;
-    color: var(--text-color1);
-    background: var(--bg-color2);
+    color: white;
+    /* color: var(--text-color1); */
+    background: var(--bg-color1);
     border-radius: 2rem;
+    /* border: 2px solid rgba(57, 57, 57, 0.8); */
     border: 2px solid var(--heading-color1);
     margin: 1.5rem 0;
     resize: none;
