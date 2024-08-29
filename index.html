@@ -85,7 +85,7 @@
         <div class="research-item">
           <img src="ppas.png" alt="">
           <h2>PPAS</h2>
-          <p> Supervision under: Dr. Daniele Schiavazzi & Dr. Alison Mardson</p>
+          <p> Supervised by: Dr. Daniele Schiavazzi & Dr. Alison Marsden </p>
           <div class="stanford-img">
             <img src="./stanford1.png" alt="">
             <img src="./nd.png" alt="">
@@ -93,12 +93,20 @@
           <p> 
           </p>
           <div class="btn-pop">
-            <button type="button" class="btn1" onclick="openPopup()">Detail</button>
+            <button type="PPAS" class="btn1" onclick="openPopup(this)">Detail</button>
             <div class="popup" id="popup">
-              <!-- <img src="tick.png"> -->
-              <h2>Thank You!</h2>
-              <p>Your details</p>
-              <button type="button" onclick="closePopup()">RETURN</button>
+              <h2>PPAS</h2>
+              <p>• Trained a neural network to achieve hemodynamic simulations with precision exceeding catheter accuracy by 15 times in average for 4 distinct patient models</p>
+              
+              <p>• Reviewed OOP interface of the 0D lumped parameter network and solver components to ensure yielding targeted pressures and flows when treating multiple stenosis regions in pulmonary arteries while minimizing patient risk</p> 
+
+              <p>• Incorporated positional encoding in multi-layer perceptrons (MLPs) for geometry-specific neural fields to increase precision up to 47% and executed parallel model solution campaigns on CPUs and GPUs utilizing openMPI, pytorch, and NVIDIA modulus</p>
+
+              <p>• Generated low-fidelity 0D and 1D models with single CPUs, vastly reducing computational cost compared to high-fidelity 3D models, which require 50+ CPU cores on high-performance computing Linux cluster</p>
+              
+              <p>• Tested a multi-fidelity neural network fed on data composed of low-fidelity data (95%) with minimal high-fidelity data (5%) improving runtime by a factor of 50 with only 9% average accuracy loss</p>  
+
+              <button type="button" onclick="closePopup(this)">RETURN</button>
             </div>
           </div>
         </div>
@@ -106,18 +114,23 @@
         <div class="research-item">
           <img src="linfa.png" alt="">
           <h2>LINFA</h2>
-          <p> Supervision under: Dr. Daniele Schiavazzi & Dr. Fang Liu</p>
+          <p> Supervised by: Dr. Daniele Schiavazzi & Dr. Fang Liu</p>
           <div class="school-img">
             <img src="./nd.png" alt="">
           </div>
-          <p>adfafdasfadssfdasa</p>
           <div class="btn-pop">
-            <button type="button" class="btn1" onclick="openPopup()">Detail</button>
-            <div class="popup" id="popup">
-              <!-- <img src="tick.png"> -->
-              <h2>Thank You!</h2>
-              <p>Your details</p>
-              <button type="button" onclick="closePopup()">OK</button>
+            <button type="LINFA" class="btn1" onclick="openPopup(this)">Detail</button>
+            <div class="popup" id="popup1">
+              <h2>LINFA</h2>
+              <p>• Supported in developing LINFA; a Python library utilizing normalizing flow and annealing for tractable inference </p>
+              
+              <p>• Tested with complex models with closed-form solutions and ODE Hemodynamic Models, specifically the Two and Three-element Windkessel Models, on both CPUs and GPUs confirming over 65% decrease in inference cost</p>
+              
+              <p>• Implemented two GitHub tutorials for 2-dim and 3-dim cases demonstrating parameter inference of a non-identifiable ballistic model using normalizing flows and adaptively trained surrogate models in both PyTorch and TensorFlow</p> 
+
+              <p>• Publication: Wang Y, Cobian E, Lee J et al., (2024). LINFA: a Python library for variational inference with normalizing flow and annealing. Journal of Open Source Software, 9(96), 6309, https://doi.org/10.21105/joss.06309</p>
+
+              <button type="button" onclick="closePopup(this)">RETURN</button>
             </div>
           </div>
         </div>
@@ -125,30 +138,47 @@
         <div class="research-item">
           <img src="quest.jpeg" alt="">
           <h2>QUEST</h2>
-          <p> Supervision under: Dr. Leanna House & Dr. Chris North</p>
+          <p> Supervised by: Dr. Chris North & Dr. Leanna House</p>
           <div class="school-img">
             <img src="./vt.png" alt="">
           </div>
-          <div class="rating">
-            <!-- <i class='bx bx-star' id="star"></i> -->
-          </div>
-          <p>adfafdasfadssfdasa</p>
-          <div class="btn-group">
-            <a href="#" class="btn">Detail</a>
+          <!-- <p>adfafdasfadssfdasa</p> -->
+          <div class="btn-pop">
+            <button type="button" class="btn1" onclick="openPopup(this)">Detail</button>
+            <div class="popup" id="popup2">
+              <h2>QUEST</h2>
+              <p>• Developed a system to transform raw image into structured data and extract object features utilizing Python to implement image augmentation, machine learning techniques, and statistical algorithms</p>
+              <p>• Implemented system with an interactive visualization tool for a professional development workshop, coordinated by Princeton University and Virginia Tech, for K-12 science teachers</p>
+              <p>• Reduced color extraction process time by 73% with only 8% accuracy loss implementing statistical algorithms (eg. Mini-Batch K-Means), background masking, edge detection, and convolutional neural networks (CNN)</p>
+              <p>• Managed to author a grant proposal and was awarded a $3000 research grant from Virginia Tech’s Computer Science department</p>
+              <button type="button" onclick="closePopup(this)">RETURN</button>
+            </div>
           </div>
         </div>
 
       </div>
     </div>
 
-    <script>
-    let popup = document.getElementById("popup");
+    <!-- <script>
+    let popup1 = document.getElementById("popup1");
 
     function openPopup() {
-      popup.classList.add("open-popup");
+      popup1.classList.add("open-popup");
     }
     function closePopup() {
-      popup.classList.remove("open-popup");
+      popup1.classList.remove("open-popup");
+    }
+    </script> -->
+
+    <script>
+    function openPopup(button) {
+        const popup = button.nextElementSibling;
+        popup.classList.add("open-popup");
+    }
+
+    function closePopup(button) {
+        const popup = button.parentElement; 
+        popup.classList.remove("open-popup");
     }
     </script>
 

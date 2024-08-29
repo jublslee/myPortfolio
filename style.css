@@ -211,7 +211,7 @@ span{
     box-shadow: 0 0 25px var(--heading-color1);
     border-radius: 4rem;
     font-size: 1.6rem;
-    color: var(--bg-color3);
+    color: var(--bg-color1);
     border: 2px solid transparent;
     letter-spacing: 0.1rem;
     font-weight: 600;
@@ -242,22 +242,20 @@ span{
     color: black;
 }
 
-.popup{
+/* .popup{
     width: 400px;
     background: #fff;
     border-radius: 6px;
-    /* position: relative; */
     position: absolute;
-    /* top: 50%; */
-    /* top: 0;  */
+    top: 50%;
+    top: 0; 
     left: 50%; 
-    transform: translate(-50%) scale(0.1);
-    /* transform: translate(-50%, -50%) scale(0.1); */
+    transform: translate(-50%, -50%) scale(0.1);
     text-align: center;
     padding: 0 30px 30px; 
     color: #333;
     visibility: hidden;
-}
+} */
 
 /* .popup img{
     width: 100px;
@@ -265,26 +263,6 @@ span{
     border-radius: 50%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 } */
-
-.popup h2{
-    font-size: 38px;
-    font-weight: 500;
-    margin: 30px 0 10px;
-}
-
-.popup button{
-    width: 100%;
-    margin-top: 50px;
-    padding: 10px 0;
-    background: #6f6f6f;
-    color: #fff;
-    border: 0;
-    outline: none;
-    font-size: 18px;
-    border-radius: 4px;
-    cursor: pointer;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-}
 
 .text-animation{
     font-size: 34px;
@@ -600,7 +578,8 @@ span{
 }
 
 .popup{
-    width: 1000px;
+    width: 90%;
+    /* width: 1000px; */
     padding: 2.5rem;
     font-size: 1.8rem;
     color: rgb(103, 103, 103);
@@ -629,6 +608,26 @@ span{
     z-index: 10; /* Higher value to ensure it's on top */
 }
 
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+/* .popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6f6f6f;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+} */
+
 .popup button {
     width: 12%;
     padding: 1rem;
@@ -639,7 +638,7 @@ span{
     border-radius: 2rem;
     border: 2px solid var(--bg-color1);
     /* margin: 1.5rem 0; */
-    margin-top: 50px;
+    margin-top: 20px;
     resize: none;
     cursor: pointer;
     outline: none;
