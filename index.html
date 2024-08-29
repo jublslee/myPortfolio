@@ -83,30 +83,52 @@
 
       <div class="wrapper">
         <div class="research-item">
-          <img src="img1.jpg" alt="">
+          <img src="ppas.png" alt="">
           <h2>PPAS</h2>
+          <p> Supervision under: Dr. Daniele Schiavazzi & Dr. Alison Mardson</p>
+          <div class="stanford-img">
+            <img src="./stanford1.png" alt="">
+            <img src="./nd.png" alt="">
+          </div>
           <p> 
           </p>
-          <div class="btn-group">
-            <a href="#" class="btn">Detail</a>
+          <div class="btn-pop">
+            <button type="button" class="btn1" onclick="openPopup()">Detail</button>
+            <div class="popup" id="popup">
+              <!-- <img src="tick.png"> -->
+              <h2>Thank You!</h2>
+              <p>Your details</p>
+              <button type="button" onclick="closePopup()">RETURN</button>
+            </div>
           </div>
         </div>
 
         <div class="research-item">
-          <img src="img1.jpg" alt="">
+          <img src="linfa.png" alt="">
           <h2>LINFA</h2>
-          <div class="rating">
-            <!-- <i class='bx bx-star' id="star"></i> -->
+          <p> Supervision under: Dr. Daniele Schiavazzi & Dr. Fang Liu</p>
+          <div class="school-img">
+            <img src="./nd.png" alt="">
           </div>
           <p>adfafdasfadssfdasa</p>
-          <div class="btn-group">
-            <a href="#" class="btn">Detail</a>
+          <div class="btn-pop">
+            <button type="button" class="btn1" onclick="openPopup()">Detail</button>
+            <div class="popup" id="popup">
+              <!-- <img src="tick.png"> -->
+              <h2>Thank You!</h2>
+              <p>Your details</p>
+              <button type="button" onclick="closePopup()">OK</button>
+            </div>
           </div>
         </div>
 
         <div class="research-item">
-          <img src="r1.jpeg" alt="">
+          <img src="quest.jpeg" alt="">
           <h2>QUEST</h2>
+          <p> Supervision under: Dr. Leanna House & Dr. Chris North</p>
+          <div class="school-img">
+            <img src="./vt.png" alt="">
+          </div>
           <div class="rating">
             <!-- <i class='bx bx-star' id="star"></i> -->
           </div>
@@ -118,6 +140,17 @@
 
       </div>
     </div>
+
+    <script>
+    let popup = document.getElementById("popup");
+
+    function openPopup() {
+      popup.classList.add("open-popup");
+    }
+    function closePopup() {
+      popup.classList.remove("open-popup");
+    }
+    </script>
 
   </section>
 
