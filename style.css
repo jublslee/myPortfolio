@@ -322,11 +322,11 @@ span{
     text-align: center;
     margin: 5rem 0;
 }
-.about{
+.education{
     /* color: black;
     background: var(--bg-color1); */
 }
-.about h2{
+.education h2{
     margin-bottom: 5rem;
 }
 .timeline-items{
@@ -336,14 +336,14 @@ span{
     flex-wrap: wrap;
     position: relative;
 }
-.timeline-items::before{
+/* .timeline-items::before{
     content: "";
     position: absolute;
     width: 5px;
     height: 100%;
     background-color: var(--heading-color1);
     left: calc(50% -1px);
-}
+} */
 .timeline-item{
     margin-bottom: 40px;
     width: 100%;
@@ -769,14 +769,14 @@ span{
         padding-right: 0;
         text-align: left;
     }
-    .timeline-item:nth-child(odd),
+    /* .timeline-item:nth-child(odd), */
     .timeline-item:nth-child(even){
         padding-left: 37px;
     }
     .timeline-dot{
         left: 0;
     }
-    .servuces{
+    .services{
         padding-bottom: 7rem;
     }
     .research .wrapper{
